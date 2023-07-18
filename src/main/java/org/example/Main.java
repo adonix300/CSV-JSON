@@ -70,11 +70,6 @@ public class Main {
                 if (Node.ELEMENT_NODE == node.getNodeType()) {
                     Element element = (Element) node;
 
-//                NamedNodeMap map = element.getAttributes();
-//                for (int j = 0; j < map.getLength(); j++) {
-//                    String attrName = map.item(i).getNodeName();
-//                    String attrValue = map.item(i).getNodeValue();
-//                }
 
                     int id = Integer.parseInt(element.getElementsByTagName("id").item(0).getTextContent());
                     String firstName = element.getElementsByTagName("firstName").item(0).getTextContent();
